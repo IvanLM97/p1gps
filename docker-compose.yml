@@ -9,8 +9,8 @@ services:
         limits:
           cpus: "0.15"
           memory: 200M
-        restart_policy:
-            condition: on-failure
+      restart_policy:
+        condition: on-failure
     ports:
       - "28017:28017"
       - "27017:27017"
